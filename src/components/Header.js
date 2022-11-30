@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons'
 
 const Header = () => {
   return (
-    <header className='p-3 flex justify-between mx-auto max-w-[900px] sticky top-0'>
+    <header className='py-3 px-4 flex justify-between mx-auto max-w-[900px] w-full self-stretch sticky top-0'>
         <div className="flex items-center">
             <SocialIcon url='https://www.linkedin.com/in/reytiartur' bgColor='transparent' fgColor='black' className='hover:fill-primary focus:fill-primary' />
             <SocialIcon url='https://www.github.com/reytiartur' bgColor='transparent' fgColor='black' className='hover:fill-primary focus:fill-primary' />
