@@ -50,9 +50,9 @@ const Contacts = () => {
             <textarea required name='message' value={input.message} onChange={handleChange} className='mb-2 mt-1 text-secondary h-20 pl-2' />
             <input type="submit" value="SEND" className='rounded-sm cursor-pointer border border-primary mt-4 py-2 font-bold text-xl bg-primary text-secondary hover:bg-secondary hover:text-primary' />
         </form>
-        <div className="absolute bottom-16 md:bottom-20 flex flex-col items-center">
+        <div className="absolute bottom-20 md:bottom-28 flex flex-col items-center">
             <p className='uppercase text-lg font-semibold tracking-wider md:text-xl text-gray-200'>... Or reach out on</p>
-            <Socials />  .
+            <Socials />
         </div>
     </div>
   )

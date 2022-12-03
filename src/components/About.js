@@ -10,9 +10,9 @@ const About = () => {
             <Typewriter words={['Frontend Developer', '<ReactJS Developer />', 'JavaScript Developer']} loop={false} cursor cursorColor='#f5e642' />
         </div>
         <div className="flex gap-3 z-10 text-lg md:text-xl md:gap-6 mt-1 md:text-zinc-500 text-gray-400">
-            <a href="#skills" className='hover:text-gray-200'>Skills</a>
-            <a href="#projects" className='hover:text-gray-200'>Projects</a>
-            <a href="#contacts" className='hover:text-gray-200'>Reach out</a>
+            <a href="/#skills" className='hover:text-gray-200'>Skills</a>
+            <a href="/#projects" className='hover:text-gray-200'>Projects</a>
+            <a href="/#contacts" className='hover:text-gray-200'>Reach out</a>
         </div>
      
         <div className="absolute h-[200px] w-[200px] md:h-[300px] md:w-[300px] rounded-full border border-primary animate-ping opacity-60" />
