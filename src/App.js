@@ -4,20 +4,26 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
 import TopButton from "./components/TopButton";
-import { createRef } from "react";
+import { useRef, useState } from "react";
 
 function App() {
-  const scrollRef = createRef()
+  const scrollRef = useRef()
+  const [scrollTopPos, setScrollTopPos] = useState(0)
+  
+  const handleScroll = () => {
+    setScrollTopPos(document.querySelector('.App').scrollTop);
+  };
+
 
   return (
-    <div className="App relative bg-secondary h-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll flex flex-col">
+    <div onScroll={handleScroll} className="App scroll-smooth relative bg-secondary h-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll flex flex-col">
       <div ref={scrollRef} />
       <Header />
       <About />
       <Skills />
       <Projects />
       <Contacts />
-      <TopButton ref={scrollRef} />
+      <TopButton scrollTopPos={scrollTopPos} ref={scrollRef} />
     </div>
   );
 }
